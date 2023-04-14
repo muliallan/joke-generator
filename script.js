@@ -7,12 +7,18 @@ const options = {
 };
 
 const getJoke = async () => {
-    const response = await fetch('https://dad-jokes.p.rapidapi.com/random/joke', options)
-    const data = await response.json()
-    // console.log(data.body[0]);
-    console.log(data.body[0].setup, data.body[0].punchline);
-    // console.log(data.body[0].punchline);
-    return data
+    const dadJokesUrl = 'https://dad-jokes.p.rapidapi.com/random/joke'
+    try {
+        const response = await fetch(dadrl, options)
+        const dadJoke = await response.json()
+        // console.log(data.body[0]);
+        console.log(dadJoke.body[0].setup, dadJoke.body[0].punchline);
+        // console.log(data.body[0].punchline);
+        return data
+    } catch (error) {
+
+    }
+
 }
 
 getJoke()

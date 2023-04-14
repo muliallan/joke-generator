@@ -39,5 +39,50 @@ body {
 
 #joke {
     margin-top: 1rem;
-    /* background: red; */
+}
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #333;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 2.5rem;
+    margin: 0;
+    outline: none;
+    padding: 0.6rem 2rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button {
+    color: #fff;
+    padding: 0.6rem 1rem;
+}
+
+.twitter-button:hover {
+    color: rgb(29, 155, 240);
+}
+
+.fa-twitter {
+    font-size: 1.2rem;
 }
