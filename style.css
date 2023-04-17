@@ -17,20 +17,34 @@ body {
     justify-content: center;
 }
 
+.page-title {
+    font-size: 3rem;
+    /* border-bottom: 1px solid rgba(17, 17, 26, 0.1) */
+}
+
 .joke-container {
     width: auto;
     max-width: 900px;
     padding: 20px 30px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-.joke-text {
+.joke-text-container {
     display: flex;
     flex-direction: row;
     font-size: 2.75rem;
 }
+
+.long-quote {
+    font-size: 2rem
+}
+
+/* .joke-text {
+    display: flex;
+    flex-direction: column;
+} */
 
 .fa-face-grin-squint-tears {
     font-size: 5rem;
@@ -71,7 +85,7 @@ button:hover {
 
 button:active {
     transform: translate(0, 0.3rem);
-    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+    /* box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65); */
 }
 
 .twitter-button {
@@ -85,4 +99,10 @@ button:active {
 
 .fa-twitter {
     font-size: 1.2rem;
+}
+
+@media (max-width: 960px) {
+    .joke-container {
+        margin: 0 1rem;
+    }
 }
